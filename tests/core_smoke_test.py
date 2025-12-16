@@ -57,7 +57,8 @@ def test_cli_main_callable():
 
         # Check for expected error message in either stdout or stderr
         expected_text = "The following arguments are required: {transcribe,transcribe-intervals}"
-        if expected_text not in stderr_output:
+        alternate_expected_text = "Expected one of {transcribe, transcribe-intervals}."
+        if expected_text not in stderr_output or alternate_expected_text not in stderr_output:
             raise AssertionError(f"Expected error message not found. Output: {stderr_output}")
     finally:
         # Ensure stdout/stderr are always restored
