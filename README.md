@@ -118,7 +118,7 @@ docker build -t autoipaalign .
 
 Run a Docker container from this image on port 7860:
 ```bash
-docker run -t autoipaalign -p 7860:7860
+docker run -p 7860:7860 autoipaalign
 ```
 You can then access the running web application at `http://localhost:7860`.
 
