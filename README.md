@@ -2,11 +2,11 @@
 
 Automatically transcribe audio into the International Phonetic Alphabet (IPA) and perform forced alignment. This toolkit includes a command line interface, comparison tools, and interactive web tool.
 
-The AutoIPA project is a collaboration between Virginia Partridge of the UMass Center for Data Science and Artificial
+The Wav2IPA project is a collaboration between Virginia Partridge of the UMass Center for Data Science and Artificial
 Intelligence and Joe Pater of UMass Linguistics. Its goal is to make automated IPA transcription more useful
 to linguists (and others!).
 Please reach out to us if you have any questions or comments about our work or have related work to share!
-More details are on our [project website](https://websites.umass.edu/comphon/autoipa-automated-ipa-transcription/).
+More details are on our [project website](https://websites.umass.edu/comphon/wav2ipa-automated-ipa-transcription/).
 
 If you use our software, please cite our AMP paper:
 

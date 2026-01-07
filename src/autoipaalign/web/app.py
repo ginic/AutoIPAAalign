@@ -13,7 +13,7 @@ DEFAULT_MODEL = "ginic/full_dataset_train_3_wav2vec2-large-xlsr-53-buckeye-ipa"
 TEXTGRID_DOWNLOAD_TEXT = "Download TextGrid file"
 TEXTGRID_NAME_INPUT_LABEL = "TextGrid file name"
 
-TITLE = "AutoIPA: Automated IPA transcription"
+TITLE = "Wav2IPA: Automated IPA transcription"
 
 INTRO_BLOCK = f"""# {TITLE}
 Experiment with producing
@@ -26,7 +26,7 @@ to linguists (and others!).
 Our first step was to fine-tune a Wav2Vec 2.0 model on the Buckeye corpus, which you can try out here.
 Our next steps will be to extend our work to other varieties of English and other languages.
 Please reach out to us if you have any questions or comments about our work or have related work to share!
-More details are on our [project website](https://websites.umass.edu/comphon/autoipa-automated-ipa-transcription/).
+More details are on our [project website](https://websites.umass.edu/comphon/wav2ipa-automated-ipa-transcription/).
 
 If you use our software, please cite our AMP paper:
 Partridge, Virginia, Joe Pater, Parth Bhangla, Ali Nirheche and Brandon Prickett. 2025/to appear. [AI-assisted analysis of phonological variation in English](https://docs.google.com/presentation/d/1IJrfokvX5T_fKkiFXmcYEgRI2ZRwgFU4zU1tNC-iYl0/edit?usp=sharing). Special session on Deep Phonology, AMP 2025, UC Berkeley. To appear in the Proceedings of AMP 2025.
@@ -52,6 +52,7 @@ VALID_MODELS = [
     "ctaguchi/wav2vec2-large-xlsr-japlmthufielta-ipa1000-ns",
     "excalibur12/wav2vec2-large-lv60_phoneme-timit_english_timit-4k",
     "excalibur12/wav2vec2-large-lv60_phoneme-timit_english_timit-4k_simplified",
+    "ginic/wav2vec2-large-lv60_phoneme-timit_english_timit-4k_buckeye-4k_bs32_3",
     "ginic/full_dataset_train_1_wav2vec2-large-xlsr-53-buckeye-ipa",
     "ginic/full_dataset_train_2_wav2vec2-large-xlsr-53-buckeye-ipa",
     "ginic/full_dataset_train_3_wav2vec2-large-xlsr-53-buckeye-ipa",
@@ -240,7 +241,7 @@ def launch_demo():
             VALID_MODELS,
             value=DEFAULT_MODEL,
             label="IPA transcription ASR model",
-            info="Select the model to use for prediction.",
+            info="Select the model to use for prediction. For details about each one, visit its model page on the HuggingFace Hub",
         )
 
         # Dropdown for transcription type selection

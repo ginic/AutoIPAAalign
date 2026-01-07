@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v1.0.1] - 2026-01-07
+
+### Changed
+- Updated project links in web app and README
+
+### Added
+- Added best TIMIT model fine-tuned on Buckeye to model list in web app
+
 ## [v1.0.0] - 2025-12-16
 
 ### Added
