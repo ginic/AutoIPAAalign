@@ -20,7 +20,7 @@ Experiment with producing
 [International Phonetic Alphabet (IPA)](https://en.wikipedia.org/wiki/International_Phonetic_Alphabet) transcriptions
 of uploaded or recorded audio using Wav2Vec2.0-based automatic speech recognition (ASR) models!
 
-The AutoIPA project is a collaboration between Virginia Partridge of the UMass Center for Data Science and Artificial
+The Wav2IPA project is a collaboration between Virginia Partridge of the UMass Center for Data Science and Artificial
 Intelligence and Joe Pater of UMass Linguistics. Its goal is to make automated IPA transcription more useful
 to linguists (and others!).
 Our first step was to fine-tune a Wav2Vec 2.0 model on the Buckeye corpus, which you can try out here.
